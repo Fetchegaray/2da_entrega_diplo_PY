@@ -1,0 +1,156 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module main</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>main</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:c%3A%5Cusers%5Cchuky%5Cdropbox%5Cutn%5Ccurso%20python%5Cnivel%20intermedio%5Centrega%5Cmain.py">c:\users\chuky\dropbox\utn\curso python\nivel intermedio\entrega\main.py</a></font></td></tr></table>
+    <p><tt>Programa&nbsp;principal.&nbsp;Se&nbsp;encarga&nbsp;de&nbsp;la&nbsp;interface&nbsp;grafica,&nbsp;genera&nbsp;la&nbsp;ventana&nbsp;y&nbsp;maneja&nbsp;el&nbsp;tree.</tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="tkinter.constants.html">tkinter.constants</a><br>
+<a href="enum.html">enum</a><br>
+</td><td width="25%" valign=top><a href="tkinter.messagebox.html">tkinter.messagebox</a><br>
+<a href="re.html">re</a><br>
+</td><td width="25%" valign=top><a href="sys.html">sys</a><br>
+<a href="tkinter.ttk.html">tkinter.ttk</a><br>
+</td><td width="25%" valign=top></td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#eeaa77">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt><a name="-actualiza_tk"><strong>actualiza_tk</strong></a>()</dt><dd><tt>Funcion&nbsp;para&nbsp;generar&nbsp;la&nbsp;tupla&nbsp;con&nbsp;los&nbsp;datos&nbsp;y&nbsp;pasarsela&nbsp;a&nbsp;la&nbsp;clase&nbsp;del&nbsp;CRUD&nbsp;para&nbsp;actualizar&nbsp;una&nbsp;fila</tt></dd></dl>
+ <dl><dt><a name="-cargar_tk"><strong>cargar_tk</strong></a>()</dt><dd><tt>Funcion&nbsp;para&nbsp;generar&nbsp;la&nbsp;tupla&nbsp;con&nbsp;los&nbsp;datos&nbsp;y&nbsp;pasarsela&nbsp;a&nbsp;la&nbsp;clase&nbsp;del&nbsp;CRUD&nbsp;para&nbsp;crear&nbsp;una&nbsp;fila</tt></dd></dl>
+ <dl><dt><a name="-limpiar_campos"><strong>limpiar_campos</strong></a>()</dt><dd><tt>Funcion&nbsp;para&nbsp;limpiar&nbsp;los&nbsp;campos&nbsp;de&nbsp;texto</tt></dd></dl>
+ <dl><dt><a name="-mensaje"><strong>mensaje</strong></a>()</dt><dd><tt>Mensaje&nbsp;personalizado&nbsp;para&nbsp;el&nbsp;menu&nbsp;"Acerca&nbsp;de"</tt></dd></dl>
+ <dl><dt><a name="-mostrar_tk"><strong>mostrar_tk</strong></a>()</dt><dd><tt>Funcion&nbsp;para&nbsp;mostrar&nbsp;los&nbsp;datos&nbsp;en&nbsp;el&nbsp;Tree&nbsp;y&nbsp;trarlos&nbsp;con&nbsp;la&nbsp;clase&nbsp;del&nbsp;CRUD</tt></dd></dl>
+ <dl><dt><a name="-selecionarclick"><strong>selecionarclick</strong></a>(event)</dt><dd><tt>Funcion&nbsp;para&nbsp;detectar&nbsp;el&nbsp;click&nbsp;en&nbsp;el&nbsp;objeto&nbsp;del&nbsp;tree</tt></dd></dl>
+</td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#55aa55">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Data</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#55aa55"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><strong>ACTIVE</strong> = 'active'<br>
+<strong>ALL</strong> = 'all'<br>
+<strong>ANCHOR</strong> = 'anchor'<br>
+<strong>ARC</strong> = 'arc'<br>
+<strong>BASELINE</strong> = 'baseline'<br>
+<strong>BEVEL</strong> = 'bevel'<br>
+<strong>BOTH</strong> = 'both'<br>
+<strong>BOTTOM</strong> = 'bottom'<br>
+<strong>BROWSE</strong> = 'browse'<br>
+<strong>BUTT</strong> = 'butt'<br>
+<strong>CASCADE</strong> = 'cascade'<br>
+<strong>CENTER</strong> = 'center'<br>
+<strong>CHAR</strong> = 'char'<br>
+<strong>CHECKBUTTON</strong> = 'checkbutton'<br>
+<strong>CHORD</strong> = 'chord'<br>
+<strong>COMMAND</strong> = 'command'<br>
+<strong>CURRENT</strong> = 'current'<br>
+<strong>DISABLED</strong> = 'disabled'<br>
+<strong>DOTBOX</strong> = 'dotbox'<br>
+<strong>E</strong> = 'e'<br>
+<strong>END</strong> = 'end'<br>
+<strong>EW</strong> = 'ew'<br>
+<strong>EXCEPTION</strong> = 8<br>
+<strong>EXTENDED</strong> = 'extended'<br>
+<strong>FALSE</strong> = 0<br>
+<strong>FIRST</strong> = 'first'<br>
+<strong>FLAT</strong> = 'flat'<br>
+<strong>GROOVE</strong> = 'groove'<br>
+<strong>HIDDEN</strong> = 'hidden'<br>
+<strong>HORIZONTAL</strong> = 'horizontal'<br>
+<strong>INSERT</strong> = 'insert'<br>
+<strong>INSIDE</strong> = 'inside'<br>
+<strong>LAST</strong> = 'last'<br>
+<strong>LEFT</strong> = 'left'<br>
+<strong>MITER</strong> = 'miter'<br>
+<strong>MOVETO</strong> = 'moveto'<br>
+<strong>MULTIPLE</strong> = 'multiple'<br>
+<strong>N</strong> = 'n'<br>
+<strong>NE</strong> = 'ne'<br>
+<strong>NO</strong> = 0<br>
+<strong>NONE</strong> = 'none'<br>
+<strong>NORMAL</strong> = 'normal'<br>
+<strong>NS</strong> = 'ns'<br>
+<strong>NSEW</strong> = 'nsew'<br>
+<strong>NUMERIC</strong> = 'numeric'<br>
+<strong>NW</strong> = 'nw'<br>
+<strong>OFF</strong> = 0<br>
+<strong>ON</strong> = 1<br>
+<strong>OUTSIDE</strong> = 'outside'<br>
+<strong>PAGES</strong> = 'pages'<br>
+<strong>PIESLICE</strong> = 'pieslice'<br>
+<strong>PROJECTING</strong> = 'projecting'<br>
+<strong>RADIOBUTTON</strong> = 'radiobutton'<br>
+<strong>RAISED</strong> = 'raised'<br>
+<strong>READABLE</strong> = 2<br>
+<strong>RIDGE</strong> = 'ridge'<br>
+<strong>RIGHT</strong> = 'right'<br>
+<strong>ROUND</strong> = 'round'<br>
+<strong>S</strong> = 's'<br>
+<strong>SCROLL</strong> = 'scroll'<br>
+<strong>SE</strong> = 'se'<br>
+<strong>SEL</strong> = 'sel'<br>
+<strong>SEL_FIRST</strong> = 'sel.first'<br>
+<strong>SEL_LAST</strong> = 'sel.last'<br>
+<strong>SEPARATOR</strong> = 'separator'<br>
+<strong>SINGLE</strong> = 'single'<br>
+<strong>SOLID</strong> = 'solid'<br>
+<strong>SUNKEN</strong> = 'sunken'<br>
+<strong>SW</strong> = 'sw'<br>
+<strong>TOP</strong> = 'top'<br>
+<strong>TRUE</strong> = 1<br>
+<strong>TclVersion</strong> = 8.6<br>
+<strong>TkVersion</strong> = 8.6<br>
+<strong>UNDERLINE</strong> = 'underline'<br>
+<strong>UNITS</strong> = 'units'<br>
+<strong>VERTICAL</strong> = 'vertical'<br>
+<strong>W</strong> = 'w'<br>
+<strong>WORD</strong> = 'word'<br>
+<strong>WRITABLE</strong> = 4<br>
+<strong>X</strong> = 'x'<br>
+<strong>Y</strong> = 'y'<br>
+<strong>YES</strong> = 1<br>
+<strong>ayudamenu</strong> = &lt;tkinter.Menu object .!menu.!menu2&gt;<br>
+<strong>b1</strong> = &lt;tkinter.Button object .!button&gt;<br>
+<strong>b2</strong> = &lt;tkinter.Button object .!button2&gt;<br>
+<strong>b3</strong> = &lt;tkinter.Button object .!button3&gt;<br>
+<strong>b4</strong> = &lt;tkinter.Button object .!button4&gt;<br>
+<strong>db</strong> = &lt;clase_db.Basedatos object&gt;<br>
+<strong>e1</strong> = &lt;tkinter.Entry object .!entry&gt;<br>
+<strong>e2</strong> = &lt;tkinter.Entry object .!entry2&gt;<br>
+<strong>e3</strong> = &lt;tkinter.Entry object .!entry3&gt;<br>
+<strong>e4</strong> = &lt;tkinter.Entry object .!entry4&gt;<br>
+<strong>e5</strong> = &lt;tkinter.Entry object .!entry5&gt;<br>
+<strong>e6</strong> = &lt;tkinter.Entry object .!entry6&gt;<br>
+<strong>l2</strong> = &lt;tkinter.Label object .!label&gt;<br>
+<strong>l3</strong> = &lt;tkinter.Label object .!label2&gt;<br>
+<strong>l4</strong> = &lt;tkinter.Label object .!label3&gt;<br>
+<strong>l5</strong> = &lt;tkinter.Label object .!label4&gt;<br>
+<strong>l6</strong> = &lt;tkinter.Label object .!label5&gt;<br>
+<strong>menubar</strong> = &lt;tkinter.Menu object .!menu&gt;<br>
+<strong>menubasedat</strong> = &lt;tkinter.Menu object .!menu.!menu&gt;<br>
+<strong>myId</strong> = &lt;tkinter.StringVar object&gt;<br>
+<strong>myaddress</strong> = &lt;tkinter.StringVar object&gt;<br>
+<strong>mycity</strong> = &lt;tkinter.StringVar object&gt;<br>
+<strong>mydateofbirth</strong> = &lt;tkinter.StringVar object&gt;<br>
+<strong>myemail</strong> = &lt;tkinter.StringVar object&gt;<br>
+<strong>myname</strong> = &lt;tkinter.StringVar object&gt;<br>
+<strong>raiz</strong> = &lt;tkinter.Tk object .&gt;<br>
+<strong>tree</strong> = &lt;tkinter.ttk.Treeview object .!treeview&gt;<br>
+<strong>wantobjects</strong> = 1</td></tr></table>
+</body></html>
