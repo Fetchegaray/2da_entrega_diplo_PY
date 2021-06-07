@@ -1,1 +1,1 @@
-# 2da_entrega_diplo_PY
+Entrega final para el ciclo intermedio de la diplomatura de Python 3. Es la misma aplicacion creada para el modulo inicial, pero adaptada para utilizar POO. Toda la documentacion fue realizada con Pydoc.
